@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            background-color: purple;
+            height: 200px;
+            width: 200px;
+        }
+
+        .box.two {
+            background-color: red;
+        }
+
+        .box.three {
+            background-color: blue;
+        }
+
+        [v-cloak] {
+            display: none;
+        }
+
+        input {
+            margin: 10px;
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="app" v-cloak>
+        <!-- <login-form /> -->
+
+        <hr />
+        <p>{{pingResponse}}</p>
+        <button @click="toggleBox">Toggle box</button>
+        <button @click="Ping">Ping!</button>
+    </div>
+
+    <div v-if="isVisible" class="box"></div>
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script>
+
+        let app = Vue.createApp({
+            data: function () {
+                return {
+                    greeting: 'Hello Vue 3!',
+                    isVisible: false,
+                    pingResponse: ""
+                }
+            },
+            methods: {
+                toggleBox() {
+                    this.isVisible = !this.isVisible
+                },
+                greet(greeting) {
+                    this.greeting = greeting
+                },
+                async Ping() {
+                    console.log("ping!")
+
+                    const response = await axios({
+                        url: 'http://localhost:8000/ping',
+                        method: 'get'
+                    }).then(function (response) {
+                        this.pingResponse = response["data"]
+                        console.log(this.pingResponse)
+                    })
+                }
+            }
+        })
+
+        app.component('login-form', {
+            template: `
+                <form @submit.prevent="handleSubmit">
+                    <h1>{{ title }}</h1>
+                    <input type="email" v-model="email" />
+                    <input type="password" v-model="password" />
+                    <button>Log in</button>
+                </form>
+            `,
+            data() {
+                return {
+                    title: 'Login Form',
+                    email: '',
+                    password: ''
+                }
+            },
+            methods: {
+                handleSubmit() {
+                    console.log(this.email, this.password)
+                }
+            }
+        })
+        app.mount('#app')
+    </script>
+</body>
+
+</html>
