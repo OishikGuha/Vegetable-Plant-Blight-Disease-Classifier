@@ -28,6 +28,6 @@ this will begin running the AI server required by the website's backend.
 
 This will begin running the main web server. Now you can enter the website!
 
-### How to run the AI
+# Extra Info
 For now the AI can only interpret 256x256 resolution images. That doesn't mean you're limited to images only with that resolution, you can just [resize your image](https://imageresizer.com/)! 
 also this [dataset](https://www.kaggle.com/arjuntejaswi/plant-village) contains all the plant images I used to train and test the AI. I didn't upload it to my github because this dataset is huge.
