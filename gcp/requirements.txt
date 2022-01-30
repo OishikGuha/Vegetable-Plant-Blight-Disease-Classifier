@@ -3,6 +3,5 @@ fastapi
 uvicorn
 python-multipart
 pillow
-tensorflow-nightly
 matplotlib
 numpy

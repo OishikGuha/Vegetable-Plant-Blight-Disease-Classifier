@@ -20,7 +20,7 @@ app.add_middleware(
 )
 
 MODEL = tf.keras.models.load_model(
-    "D:\machine learning projects\\agriculture\saved_models\modelv4. better, faster, stronger")
+    "D:\machine learning projects\\agriculture\saved_models\modelv5. longer, stronger, bonger")
 
 CLASS_NAMES = ['Potato with Early blight',
                'Potato with Late blight',
@@ -58,7 +58,8 @@ async def predict(
     confidence = np.max(predictions[0])
     return {
         'class': predicted_class,
-        'confidence': str(float("{0:.2f}".format(confidence)) * 100) + "%"
+        'confidence': float(confidence)
+        # 'confidence': str(float("{0:.2f}".format(confidence)) * 100) + "%"
     }
 
 if __name__ == "__main__":
