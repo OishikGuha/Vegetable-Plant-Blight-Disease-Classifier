@@ -1,5 +1,6 @@
 from fastapi import FastAPI, File, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
 import uvicorn
 import numpy as np
 from io import BytesIO
@@ -21,12 +22,12 @@ app.add_middleware(
 MODEL = tf.keras.models.load_model(
     "D:\machine learning projects\\agriculture\saved_models\modelv4. better, faster, stronger")
 
-CLASS_NAMES = ['Potato___Early_blight',
-               'Potato___Late_blight',
-               'Potato___healthy',
-               'Tomato_Early_blight',
-               'Tomato_Late_blight',
-               'Tomato_healthy']
+CLASS_NAMES = ['Potato with Early blight',
+               'Potato with Late blight',
+               'Healthy Potato',
+               'Tomato with Early blight',
+               'Tomato with Late blight',
+               'Healthy Tomato']
 
 
 @app.get("/ping")
@@ -39,9 +40,14 @@ def read_file_as_image(data) -> np.ndarray:
     return image
 
 
+class FileData(BaseModel):
+    file: UploadFile
+
+
 @app.post("/predict")
 async def predict(
     file: UploadFile = File(...)
+    # file: FileData = File(...)
 ):
     image = read_file_as_image(await file.read())
     img_batch = np.expand_dims(image, 0)
@@ -52,7 +58,7 @@ async def predict(
     confidence = np.max(predictions[0])
     return {
         'class': predicted_class,
-        'confidence': float(confidence)
+        'confidence': str(float("{0:.2f}".format(confidence)) * 100) + "%"
     }
 
 if __name__ == "__main__":
