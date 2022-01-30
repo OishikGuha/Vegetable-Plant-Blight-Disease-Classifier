@@ -16,15 +16,15 @@ Make sure you have Node.js installed on your OS.
 
 ### Running the project:
 
-`cd api`
+`$ cd api`
 
-`python main.py`
+`$ python main.py`
 
 this will begin running the AI server required by the website's backend.
 
-`cd frontend/main`
+`$ cd frontend/main`
 
-`npm run serve`
+`$ npm run serve`
 
 This will begin running the main web server. Now you can enter the website!
 
