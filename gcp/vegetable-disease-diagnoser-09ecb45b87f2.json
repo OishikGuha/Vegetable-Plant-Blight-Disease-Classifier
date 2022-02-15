@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "vegetable-disease-diagnoser",
+  "private_key_id": "09ecb45b87f26891e11660b5c92f0d89b4354fd7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCW82Ey7Irnie1c\ngnMJt2I7o4bnUTwXIK4nCa+VczytwmxbcsaNwbA1eaQo7/m0ZgqfQUXmRGgdoPMf\n/51r05RA1SV1KurCPylWAFzH0Gjmmrcnmn6JLCw6emDYeodBMrMLDI7aRePjh3Qy\n1on8GShPYKYnK7nwJ7jb/CSxA6USf8voBjpCOvdjgOVGsXXVZlHUS98TjuAyOJJv\nNLGiGUHQL3fwpNIEvgYfSoDuqPrNuHIwddP6GjM79EXNiQd0Km/zqFKZQpU/3gge\nXWJCXzKaUoPKB+pUaeFJWdQQh4v033OaJQTpnnUdSGMM4aPapdZegAgdlIE68M8C\ngEk2po+jAgMBAAECggEAEe163EjyoFglvCh0EDHa9VlREtT3jYmglVtVoqrKiJqA\nMwY5JancyyUUxZXmsrGxzkM60YPLV8V/SowZvq4ku+R0q+s6cXJ97sxhOIv8gXLb\nkNUM9S6tXA6fxOYcfTZPxF6r8ql9TM8QEl+fiLTWMEM6yIktbqPRFTNniix0JPOg\n4UMZ7F036NLB/VbjI9Cd7QLUIq0i28UAjySNjdCAxRsUC2r+0Eurx7lh3PTdehJp\n+ZdngD2Ecg8WFwiM//07I4L/w8O9iwMJFdEDpRCRTInC0hD/uNxAtXi5ctfx4kxv\ndYSNGCL7qZOqqo8RWZO0Qo1XSCk5dJbQLrVDZjeNmQKBgQDMlr7tBmOj7f9FU81D\n7qPmqZJRtPqHShd11cwRW2ECjgviUNfVOI92k0uY23/Jl6ytmgYOe83D1stfdmt6\nPu7naHie+5uAwfcYQ9scgVsYafb3LIe5XEu7OeoUsIyp6T43K6wUyxE1FvEoCELS\nE4PPBUUFVeOJFD5OcC3fyuBKCwKBgQC84hPnoy1XTkeH1lBfAOYMD51xXQZTpb7K\n3NRmglj6anNnXUuwXi51pjyWytP+HlHBqQYCpdC+7/RznaCNPVDf9SMg5qK2RRT2\noj9CnEEeLnscqb3maXlqmIqBmuf2tXa3lwrAouYgL2jeOkoQj26JUl6erdKxvVdr\nr4e054ZnyQKBgGpZ4p4sOBe7XHuZeJbbsu/xLlKzFZjGdzOWFCLhsag2Vw8qn0gD\nwvAM2bt4PxF4exczffqBeRFY0xeo424E0QQSVsGuYcOpEN3YSEqlI8mpK+yJhXRh\n+iw1iu1+aWDaErFzTlzwwt0qM+pvgOzboCU5xAtl/oX/s/PqdK5lM/rJAoGAOh97\nrpEZF7+f5V3+t21oXRfFBChzFPRxBK31smG0DcMKJimga/Jfa5avGFvr5kvgLq7b\niZ8K4Gaom5dK24udwn0FxU8TjPEvJUICI3Y/15DIE6bsJ+YXFcVBAebwMIvgr1gM\nWAEIvai5JYFcX0Iz6o/tS/kDV+yC5UFLilCgnHkCgYBtwxwtmEBttkztWZZKQoqO\n+5/tQO07Y6F7hanjV3UKZBSbebUczG8NWbM1aQpa2ridG45OD1moCm+gDkc6ozG7\nirKz6aPBxYh1V2VAEIrOM8MEeNsj7aUMQbwXguHi/UsK+GcRnvLPuRpZzziD2Pk7\nwaJ4+l1k4NZs+snppsACFQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "service-1@vegetable-disease-diagnoser.iam.gserviceaccount.com",
+  "client_id": "105390454229711045823",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/service-1%40vegetable-disease-diagnoser.iam.gserviceaccount.com"
+}

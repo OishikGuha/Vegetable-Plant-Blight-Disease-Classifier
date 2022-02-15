@@ -47,13 +47,13 @@ p {
   text-align: center;
   margin-top: 20%;
   display: block;
-  color: rgb(36, 145, 240);
+  color: rgb(255, 255, 255);
 }
 
 label {
   font-family: Helvetica, sans-serif;
   font-weight: bolder;
-  color: blueviolet;
+  color: rgb(255, 255, 255);
   display: block;
   align-content: center;
   text-align: center;
@@ -64,7 +64,6 @@ button {
   font-weight: bolder;
   position: absolute;
   transform: translateX(1500%);
-  color: rgb(93, 17, 163);
   display: block;
   align-content: center;
   text-align: center;
@@ -73,5 +72,6 @@ button {
 .result {
   transform: translateY(250%);
   margin-top: -1%;
+  color: rgb(139, 179, 253);
 }
 </style>

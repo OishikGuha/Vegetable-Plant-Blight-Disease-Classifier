@@ -1,7 +1,10 @@
 tensorflow==2.5.0
+pandas
 fastapi
 uvicorn
 python-multipart
 pillow
 matplotlib
 numpy
+google-cloud-storage
+gunicorn

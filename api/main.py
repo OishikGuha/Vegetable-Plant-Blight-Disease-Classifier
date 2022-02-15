@@ -52,6 +52,9 @@ async def predict(
     image = tf.image.resize(read_file_as_image(await file.read()), (256, 256))
     img_batch = np.expand_dims(image, 0)
 
+    # print(image.shape)
+    print(img_batch.shape)
+
     predictions = MODEL.predict(img_batch)
 
     predicted_class = CLASS_NAMES[np.argmax(predictions[0])]
@@ -59,8 +62,7 @@ async def predict(
 
     return {
         'class': predicted_class,
-        'confidence': float(confidence)
-        # 'confidence': str(float("{0:.2f}".format(confidence)) * 100) + "%"
+        'confidence': str(float(confidence) * 100) + "%"
     }
 
 if __name__ == "__main__":
