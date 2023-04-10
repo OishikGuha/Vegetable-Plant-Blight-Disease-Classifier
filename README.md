@@ -14,6 +14,10 @@ Make sure you have Node.js installed on your OS.
 
 `$ npm install`
 
+`$ cd ../../api/`
+
+`$ pip install -r requirements.txt`
+
 ### Running the project:
 
 `$ cd api`
