@@ -10,7 +10,7 @@ Make sure you have Node.js installed on your OS.
 
 *For installing node modules*
 
-`$ cd frontend/main`
+`$ cd frontend/apitest`
 
 `$ npm install`
 
